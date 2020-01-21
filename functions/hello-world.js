@@ -1,5 +1,3 @@
-import querystring from "querystring";
-
 const { FAQ_BOT_TOKEN } = process.env;
 
 export async function handler(event) {
@@ -10,7 +8,7 @@ export async function handler(event) {
     };
   }
 
-  const params = querystring.parse(event.body);
+  const params = JSON.parse(event.body);
   console.log('Params', params);
 
   return {
