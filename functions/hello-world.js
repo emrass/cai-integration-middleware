@@ -16,7 +16,6 @@ export async function handler(event) {
     body: JSON.stringify({
       "replies": [{
         "type": "text",
-        "delay": 2,
         "content": "Hello world!",
       }],
       "conversation": {
