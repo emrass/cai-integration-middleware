@@ -1,3 +1,5 @@
+import querystring from "querystring";
+
 const { FAQ_BOT_TOKEN } = process.env;
 
 export async function handler(event) {
@@ -8,7 +10,8 @@ export async function handler(event) {
     };
   }
 
-  console.log(event.body)
+  const params = querystring.parse(event.body);
+  console.log('Params', params);
 
   return {
     statusCode: 200,
