@@ -20,9 +20,7 @@ export async function handler(event) {
       }],
       "conversation": {
         "language": "en",
-        "memory": {
-          "user": "Bob",
-        },
+        "memory": {},
       },
     }),
   };
