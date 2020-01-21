@@ -1,0 +1,25 @@
+{
+  "name": "cai-integration-middleware",
+  "version": "1.0.0",
+  "description": "This repository contains sample code to integrate a regular intent-based bot with an FAQ bot using [SAP Conversational AI](https://cai.tools.sap).",
+  "main": "index.js",
+  "dependencies": {
+    "netlify-lambda": "^1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "netlify-lambda build functions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrass/cai-integration-middleware.git"
+  },
+  "keywords": [],
+  "author": "Enrico Mrass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emrass/cai-integration-middleware/issues"
+  },
+  "homepage": "https://github.com/emrass/cai-integration-middleware#readme"
+}
