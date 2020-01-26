@@ -11,8 +11,9 @@ export async function handler(event) {
     };
   }
 
-  const params = JSON.parse('webhook body: ', event.body);
-  const params = JSON.parse('webhook intents', params.nlp.intents);
+  const params = JSON.parse(event.body);
+  console.log('webhook body: ', params);
+  console.log('webhook intents', params.nlp.intents);
 
   let response;
   try {
