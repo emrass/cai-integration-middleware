@@ -19,7 +19,10 @@ export async function handler(event) {
   try {
     response = await fetch(API_ENDPOINT, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Token ${FAQ_BOT_TOKEN}`,
+      },
       body: {
         conversation_id: params.conversation.id,
         message: { content: params.nlp.source, type: 'text' },
