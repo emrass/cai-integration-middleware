@@ -4,7 +4,8 @@
   "description": "This repository contains sample code to integrate a regular intent-based bot with an FAQ bot using [SAP Conversational AI](https://cai.tools.sap).",
   "main": "index.js",
   "dependencies": {
-    "netlify-lambda": "^1.6.3"
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {},
   "scripts": {
