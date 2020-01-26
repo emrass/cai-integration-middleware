@@ -22,7 +22,7 @@ export async function handler(event) {
       headers: { 'Content-Type': 'application/json' },
       body: {
         conversation_id: params.conversation.id,
-        message: params.nlp.source,
+        message: { content: params.nlp.source, type: 'text' },
         language: params.nlp.language,
       },
     });
