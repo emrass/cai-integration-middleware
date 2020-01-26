@@ -32,6 +32,7 @@ export async function handler(event) {
 
     console.log('FAQ dialog response: ', JSON.parse(response));
   } catch (err) {
+    console.log('/dialog request error: ', err);
     return {
       statusCode: err.statusCode || 500,
       body: JSON.stringify({
